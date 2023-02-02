@@ -1,0 +1,26 @@
+
+version: 2
+
+models:
+  - name: worlds_model
+    description: "Super Mario 3 worlds model"
+    columns:
+      - name: id
+        description: "The primary key for this table."
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Name of the world."
+        tests:
+          - unique
+          - not_null
+      - name: alias
+        description: "Alias for the world."
+        tests:
+          - unique
+      - name: description
+        description: "Description of the world."
+        tests:
+          - unique
+          - not_null
